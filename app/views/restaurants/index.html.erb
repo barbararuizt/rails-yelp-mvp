@@ -1,0 +1,13 @@
+
+<div class="row">
+  <% @restaurants.each do |rest| %>
+    <div class="col-6">
+      <h1><%= rest.name %></h1>
+      <ul>
+        <li><%= rest.address %></li>
+        <li><%= rest.phone_number %></li>
+        <li><%= rest.category %></li>
+      </ul>
+    </div>
+  <% end %>
+</div>

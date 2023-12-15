@@ -1,0 +1,17 @@
+
+<div class="card p-4" style="width: 50%">
+  <ul>
+    <div class="card-body">
+      <h1><%= @restaurant.name %></h1>
+      <li><%= @restaurant.address %></li>
+      <li><%= @restaurant.category %></li>
+    </div>
+  </ul>
+
+  <ul class= "list-group">
+    <% @restaurant.reviews.each do |review| %>
+    <li class= "list-group-item"><%= review.rating %> -- 
+    <%= review.content %></li>
+    <% end %>
+  </ul>
+</div>
