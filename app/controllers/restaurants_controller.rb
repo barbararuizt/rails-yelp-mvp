@@ -17,13 +17,6 @@ class RestaurantsController < ApplicationController
     redirect_to restaurant_path(@restaurant)
   end
 
-  def new_review
-    @review = Review.new
-  end
-
-  def create_review
-  end
-
   def restaurant_params
     params.require(:restaurant).permit(:name, :category, :phone_number, :address)
   end
